@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	{% if success_message is defined %}
+
+		<h3 class="success-message">{{ success_message }}</h3>
+
+	{% elseif error_message is defined %}
+
+	<h2 class="contact-title">Lépj kacsolatba velünk!</h2>
+	<h5 id="error-message">{{ error_message }}</h5>
+
+		{{ form(contact_form) }}
+
+	{% else %}
+
+	<h2 class="contact-title">Lépj kacsolatba velünk!</h2>
+
+		{{ form(contact_form) }}
+
+	{% endif %}
+	
+{% endblock %}

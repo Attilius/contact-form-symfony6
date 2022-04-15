@@ -1,0 +1,30 @@
+body {
+    background-color: #21262c;
+    color: #eee8aa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.contact-title {
+    margin-bottom: 20px;
+}
+
+#contact_form {
+    width: 400px;
+}
+
+#contact_form_message {
+    height: 220px;
+}
+
+.success-message {
+    color: limegreen;
+}
+
+#error-message {
+    color: red;
+}
